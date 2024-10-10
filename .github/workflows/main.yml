@@ -16,6 +16,7 @@ jobs:
         with:
           node-version: 14
       - name: Install JSHint
+        run: npm cache clean --force
         run: npm install jshint --global
       - name: Run Linter
         run: |
