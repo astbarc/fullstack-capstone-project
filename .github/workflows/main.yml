@@ -15,8 +15,6 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 14
-      - name: Clean cache
-        run: npm install jshint --global
       - name: Install JSHint
         run: npm cache clean --force
       - name: Run Linter
